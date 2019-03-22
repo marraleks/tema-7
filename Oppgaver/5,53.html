@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3,53</title>
+    <style>
+        input {
+            width: 40vw;
+        }
+    </style>
+</head>
+<body>
+    <input id="overskrift" type="text" placeholder="Skriv inn overskrift">
+    <input id="bilde" type="url" placeholder="Lim inn url-link">
+    <button id="btn">Magic-button</button>
+     
+    <h1 id="overskrift1"></h1>
+    <p id="bilde1"></p>
+
+
+
+    <script>
+        
+        const overskrift = document.getElementById("overskrift");
+        const bilde = document.getElementById("bilde");
+        const btn = document.getElementById("btn");
+        const overskrift1 = document.getElementById("overskrift1")
+
+
+        function artikkelmaker() {
+            overskrift1.innerHTML = `${overskrift.value}`;
+            bilde1.innerHTML = `<img src="${bilde.value}" width="200">`;
+
+        }
+
+        btn.addEventListener("click", artikkelmaker);
+
+
+
+
+
+
+        
+        
+        
+    </script>
+    
+</body>
+</html>

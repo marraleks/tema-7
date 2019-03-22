@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oppgave1,4a</title>
+</head>
+<body>
+
+    <input id="inpFornavn" type="text" placeholder="Hva er ditt fornavn?" autocomplete="off">
+    <input id="inpEtternavn" type="text" placeholder="Hva er ditt etternavn?" autocomplete="off">
+    <p id="ut2">Fornavn Etternavn</p>
+    
+
+
+<script>
+
+    const inpFornavn = document.querySelector("#inpFornavn");
+    const inpEtternavn = document.querySelector("#inpEtternavn");
+    const ut2 = document.querySelector("#ut2");
+    
+    function skrivNavn() {
+        ut2.innerHTML = `${inpFornavn.value} ${inpEtternavn.value}`;
+    }
+
+    inpFornavn.addEventListener("input", skrivNavn);
+    inpEtternavn.addEventListener("input", skrivNavn);
+
+</script>
+
+</body>
+</html>
