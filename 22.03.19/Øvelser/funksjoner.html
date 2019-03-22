@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funksjoner</title>
+</head>
+<body>
+
+    <script>
+        
+        /*
+        function moveForward() {
+            document.write("Nå går jeg fremover");
+            document.write(innerWidth);
+            document.write(innerHeight);
+        }
+
+        // Funksjonskallet
+        // Kjører funksjonen
+        
+        moveForward(); 
+       */
+
+        /*
+        function turnLeft(grader) {
+            document.write(`<h1>Jeg vender meg ${grader} til venstre </h1>`);
+        }
+
+        turnLeft(60);
+        turnLeft(120);
+        */
+
+        function sendMelding(avsender, mottaker, tekst) {
+
+            const melding = `
+                <h1>Hei ${mottaker}</h1>
+                <p>${tekst}</p>
+                <footer>Hilsen ${avsender}</footer>
+            `;
+
+            document.write(melding);
+        }
+    
+        sendMelding("Bill Gates", "Erna", "Hvordan går det?");
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        body {
+            transition: 5s;
+        }
+        #inpFarge {
+            padding: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <input id="inpFarge" type="text" placeholder="Hvilken farge liker du?">
+    
+    <script>
+    
+        //Vi må alltid lage en referanse til de HTML-elementene 
+        //vi skal ta i bruk i JavaScript-koden
+        // const inpFarge = document.getElementById("inpFarge");
+        const inpFarge = document.querySelector("#inpFarge");
+
+        function endreFarge() {
+            document.body.style.backgroundColor = inpFarge.value;
+        }
+
+        inpFarge.addEventListener("input", endreFarge);
+    
+    </script>
+
+</body>
+</html>

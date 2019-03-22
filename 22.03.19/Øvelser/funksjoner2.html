@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funksjoner2</title>
+</head>
+<body>
+    <h1>Javascript er moro</h1>    
+
+
+
+<script>
+ /*
+    //En funksjon kan ha input
+    //En funksjon kan også ha en output
+
+    function leggSammen(tall1, tall2) {
+        const sum = tall1 + tall2;
+        return sum;
+    }
+
+    const svar = leggSammen(8, 20);
+
+    alert(`Svaret er ${svar}`);
+ */
+
+    function byttFarge() {
+        document.body.style.backgroundColor = "green";
+    }
+
+    function byttTekst() {
+        document.body.style.color = "indigo";
+    }
+
+    // document.onclick = byttFarge;  <--- gjør det sammen som under
+    document.addEventListener("click", byttFarge);
+    document.addEventListener("click", byttTekst);
+
+</script>
+
+</body>
+</html>
