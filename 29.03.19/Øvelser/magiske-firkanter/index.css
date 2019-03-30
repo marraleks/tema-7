@@ -1,0 +1,16 @@
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+main {
+
+}
+
+
+main div {
+    position: absolute;
+    background-color: orange;
+    transition: 2s;
+}
