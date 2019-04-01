@@ -20,6 +20,18 @@ addEventListener("load", alfabetisk);
 
 frukt.push("ananas");
 
-
+function bananplass() {
 const bananplass = frukt.indexOf("banan");
-console.log(bananplass);
+console.log("bananen befinner seg på plass " + bananplass)
+}
+
+addEventListener("load", bananplass);
+
+
+function fjerne() {
+    const fjerne = frukt.splice(2, 1);
+    console.log(fjerne + " blir fjernet");
+    console.log(frukt);
+}
+
+addEventListener("load", fjerne);
