@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#klokka {
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    background-color: #eeeeee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sekundviser {
+    position: absolute;
+    bottom: 50%;
+    width: 3px;
+    height: 32vh;
+    background-color: black;
+
+    transform-origin: center bottom; 
+    transform: rotate(0deg);
+    transition: cubic-bezier(0.93,-0.1, 0, 1.72);
+}

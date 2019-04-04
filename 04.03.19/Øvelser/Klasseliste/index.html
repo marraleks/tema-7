@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Klasseliste</title>
+   <style>
+       .firkanten {
+           margin-top: 20px;
+           padding: 40px;
+           background-color: grey;
+           transition: 1s;
+       }
+
+       .gul {
+           background-color: yellow;
+           padding: 50px;
+       }
+   </style>
+</head>
+<body>
+   
+
+    <button id="knappen">Bytt farge på firkanten</button>
+    <div class="firkanten"></div>
+
+
+    <script>
+    
+        const knappen = document.querySelector("#knappen");
+        const firkanten = document.querySelector(".firkanten");
+        
+    
+        knappen.onclick = () => {
+            // firkanten.classList.add("gul");
+            // firkanten.classList.remove("firkanten");
+            firkanten.classList.toggle("gul");
+
+        }
+    </script>
+
+</body>
+</html>

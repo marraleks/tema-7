@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(#333, black);
+    color: white;
+}
+main {                        
+    height: 100vh;
+}
+
+#keys {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 0.5rem;
+    height: 50%;
+}
+
+#keys > div {
+    padding: 1rem;
+    display: grid;
+    grid-auto-flow: row;     
+    grid-gap: 0.5rem;       
+    text-align: center;
+    border: 1px solid gray;
+}
+
+/* kbd står for keyboard */
+kbd {
+    font-size: 2rem;
+    color: lightcoral;
+}
+#recording {
+    background-color: #333; 
+    width: 80%;
+    margin: auto;           
+}
+
+#btnRecord, #btnPlay {
+    background-color: darkorange;
+    font-family: sans-serif;
+    padding: 1rem;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#btnPlay {
+    background-color: silver;
+}
+
+@keyframes blink {
+    to {
+        transform: scale(1.05);
+    }
+}
+
+.blinker {
+    animation: blink 0.4s infinite alternate;
+}
