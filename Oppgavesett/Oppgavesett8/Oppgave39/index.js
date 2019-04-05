@@ -12,10 +12,6 @@ cb.onclick = () => {
 }
 
 
-
-
-
-
 const klokka = document.querySelector("#klokka");
 
 

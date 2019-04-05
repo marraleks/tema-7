@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    /*
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    */
+    transition: 1s;
+    background-color: grey;
+    
+}
+
+#overskrift {
+    text-align: center;
+    font-family: 'Avenir Next';
+    color: white;
+}
+
+#slideshow {
+    width: 600px;
+    display: block;
+    margin: auto;
+    position: relative;
+}
+
+#slideshow img {
+    width: 100%;
+}
+
+#forrige {
+    position: absolute;
+    top: calc(50% - 1rem);
+    left: -35px;
+}
+
+#neste {
+    position: absolute;
+    top: calc(50% - 1rem);
+    right: -35px;
+
+}
+
+i {
+    font-size: 2rem;
+    color: white;
+    transition: 0.6s;
+    
+}
+i:active {
+    color: black;
+    transition: 0.1s;
+}
