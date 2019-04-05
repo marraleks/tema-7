@@ -30,12 +30,12 @@ let nr = 0;
 function byttBilde() {
     // document.body.style.backgroundImage = `url("${bilder[nr].poster}")`;
     // slideshow.style.backgroundImage = `url("${bilder[nr].poster}")`;
-    
+
     if (nr >= bilder.length) {
         nr = 0;
     }
     if(nr < 0) {
-        nr = bilder.length; 
+        nr = bilder.length - 1; 
     }
     
     bilde.src = bilder[nr].poster;
@@ -53,7 +53,7 @@ neste.onclick = () => {
 forrige.onclick = () => {
     nr--;
     byttBilde();
-    tikker = clearInterval(tikker);
+   tikker = clearInterval(tikker);
     tikker = setInterval(fremover, 5000);  
 }
 
@@ -64,3 +64,4 @@ function fremover() {
 
 byttBilde();
 tikker = setInterval(fremover, 5000);
+
