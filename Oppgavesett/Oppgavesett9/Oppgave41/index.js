@@ -22,14 +22,20 @@ const bilder = [
     }
 ];
 
+// Loader bilder
+for(const bilde of bilder) {
+    loader.innerHTML += `<img src="${bilde.poster}">`;
+}
+
+
+
 let tikker;
 let nr = 0;
 
 
 
 function byttBilde() {
-    // document.body.style.backgroundImage = `url("${bilder[nr].poster}")`;
-    // slideshow.style.backgroundImage = `url("${bilder[nr].poster}")`;
+    //bilde.src = bilder[nr].poster;
 
     if (nr >= bilder.length) {
         nr = 0;
@@ -38,10 +44,10 @@ function byttBilde() {
         nr = bilder.length - 1; 
     }
     
-    bilde.src = bilder[nr].poster;
+    document.body.style.backgroundImage = `url("${bilder[nr].poster}")`;
+    //slideshow.style.backgroundImage = `url("${bilder[nr].poster}")`;
     overskrift.innerHTML = bilder[nr].tittel;
 }
-
 
 neste.onclick = () => {
     nr++;
@@ -53,7 +59,7 @@ neste.onclick = () => {
 forrige.onclick = () => {
     nr--;
     byttBilde();
-   tikker = clearInterval(tikker);
+    tikker = clearInterval(tikker);
     tikker = setInterval(fremover, 5000);  
 }
 
