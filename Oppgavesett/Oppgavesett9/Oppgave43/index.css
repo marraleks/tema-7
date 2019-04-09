@@ -1,100 +1,96 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
 body {
-    margin: auto;
-    max-width: 100%;
-    font-family: 'Roboto', sans-serif;
-    background-color: #F25556;
+  margin: auto;
+  max-width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #f25556;
 }
 
 .header {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 1);
-    height: 60px;
-    top: -80px;
-    transition: 1s;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  height: 60px;
+  top: -80px;
+  transition: 1s;
 }
 
 .header.visible {
-    top: 0px;
+  top: 0px;
 }
 
 .header.visible1 {
-    top: -80px;
+  top: -80px;
 }
-
-
 
 .topNav {
-    font-family: 'Montserrat', sans-serif;
-    margin: auto;
-    margin-top: 0px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-bottom: 5px;
-    
+  font-family: "Montserrat", sans-serif;
+  margin: auto;
+  margin-top: 0px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 5px;
 }
 
-.venstre {      
-    display: grid;
-    align-items: center;
-    justify-content: start;
-    grid-auto-flow: column;
-    text-align: center;
-    margin-left: 50px;
+.venstre {
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  grid-auto-flow: column;
+  text-align: center;
+  margin-left: 50px;
 }
 
 .midten {
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-auto-flow: column;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-flow: column;
 }
 
 .hoyre {
-    display: grid;
-    align-items: center;
-    justify-content: end; 
-    grid-auto-flow: column;
-    margin-right: 50px;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  grid-auto-flow: column;
+  margin-right: 50px;
 }
 
 nav a {
-    text-decoration: none;
-    padding: 1rem;
-    color: black;
-    font-size: .9375rem;
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    grid-gap: 5px;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+  font-size: 0.9375rem;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 5px;
 }
 
 nav a:hover {
-    color: #F25556;
+  color: #f25556;
 }
 
 h1 {
+  font-size: 10rem;
+  text-align: center;
+  color: rgb(37, 37, 37);
+  font-weight: 900;
+  margin: 0;
+  padding-top: 3rem;
+}
 
-    font-size: 10rem;
-    text-align: center;
-    color: rgb(37, 37, 37);
-    font-weight: 900;
-    margin: 0;
-    padding-top: 3rem;
-  }
+.fonter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 
-  .fonter {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.25rem;
-  }
-
-  .fas.fa-link {
-      font-size: 0.8rem;
-      line-height: 1;
-  }
+.fas.fa-link {
+  font-size: 0.8rem;
+  line-height: 1;
+}

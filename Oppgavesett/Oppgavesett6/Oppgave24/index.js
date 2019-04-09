@@ -1,6 +1,5 @@
-
 function setup() {
-    createCanvas(innerWidth, innerHeight);
+  createCanvas(innerWidth, innerHeight);
 }
 
 const bredde = 200;
@@ -11,16 +10,16 @@ const backgroundFarge = "black";
 const strokeTykk = "3";
 
 function draw() {
-    background(backgroundFarge);
-    fill(farge);
-    stroke(strokeFarge);
-    strokeWeight(strokeTykk);
+  background(backgroundFarge);
+  fill(farge);
+  stroke(strokeFarge);
+  strokeWeight(strokeTykk);
 
-    rect(10, 10, bredde, hoyde);
-    
-    rect(40, 40, bredde, hoyde);
-    
-    rect(70, 70, bredde, hoyde);
-    
-    rect(100, 100, bredde, hoyde);
+  rect(10, 10, bredde, hoyde);
+
+  rect(40, 40, bredde, hoyde);
+
+  rect(70, 70, bredde, hoyde);
+
+  rect(100, 100, bredde, hoyde);
 }

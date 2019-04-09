@@ -1,16 +1,16 @@
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight);
+  createCanvas(window.innerWidth, window.innerHeight);
 }
 
 function draw() {
-    if (mouseIsPressed) {
-        noStroke();
-        fill(255);
-        circle(mouseX, mouseY, 80);
-    } else {
-        fill(0);
-    }
-    circle(mouseX, mouseY, 10);
+  if (mouseIsPressed) {
+    noStroke();
+    fill(255);
+    circle(mouseX, mouseY, 80);
+  } else {
+    fill(0);
+  }
+  circle(mouseX, mouseY, 10);
 }
 
 /*
@@ -19,5 +19,3 @@ function draw() {
 	line(mouseX, mouseY, pmouseX, pmouseY);
     }
 */
-
-

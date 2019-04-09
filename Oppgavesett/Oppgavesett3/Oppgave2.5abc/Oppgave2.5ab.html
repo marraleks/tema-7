@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Oppgave 2,5ab</title>
+  </head>
+  <body>
+    <div id="boks1"></div>
+    <div id="boks2"></div>
+    <input id="yPos" type="number" placeholder="ypos" />
+    <input id="xPos" type="number" placeholder="xpos" />
+  </body>
+
+  <script>
+    const boks1 = document.querySelector("#boks1");
+    const boks2 = document.querySelector("#boks2");
+    const yPos = document.getElementById("yPos");
+    const xPos = document.getElementById("xPos");
+
+    boks1.style.backgroundColor = "red";
+    boks1.style.width = "210px";
+    boks1.style.height = "210px";
+
+    boks2.style.backgroundColor = "blue";
+    boks2.style.width = "50px";
+    boks2.style.height = "50px";
+    boks2.style.position = "absolute";
+    boks2.style.left = "0px";
+    boks2.style.top = "0px";
+    boks2.style.transition = "1s";
+
+    function posisjon() {
+      boks2.style.top = `${yPos.value}px`;
+      boks2.style.left = `${xPos.value}px`;
+    }
+
+    xPos.addEventListener("input", posisjon);
+    yPos.addEventListener("input", posisjon);
+  </script>
+</html>

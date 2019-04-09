@@ -1,90 +1,99 @@
 body {
-    margin: 0;
-    background-color: #313131;  
+  margin: 0;
+  background-color: #313131;
 }
 
 #burger {
-    width: 2rem;
-    height: 2rem;
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-    cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  cursor: pointer;
 }
 
 #burger div {
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background-color: white;
-    transition: 0.5s;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transition: 0.5s;
 }
 
 #cb {
-    display: none;
+  display: none;
 }
 
+#burger div:nth-child(1) {
+  top: 0;
+}
+#burger div:nth-child(2) {
+  top: calc(1rem - 1px);
+}
+#burger div:nth-child(3) {
+  top: calc(1rem - 1px);
+}
+#burger div:nth-child(4) {
+  bottom: 0;
+}
 
-#burger div:nth-child(1) { top: 0; }
-#burger div:nth-child(2) { top: calc(1rem - 1px); }
-#burger div:nth-child(3) { top: calc(1rem - 1px); }
-#burger div:nth-child(4) { bottom: 0; }
-
-
-.valgt div:nth-child(1) { opacity: 0; top: 1rem; }
-.valgt div:nth-child(2) { transform: rotate(45deg); }
-.valgt div:nth-child(3) { transform: rotate(-45deg); }
-.valgt div:nth-child(4) { opacity: 0; bottom: 1rem; }
-
+.valgt div:nth-child(1) {
+  opacity: 0;
+  top: 1rem;
+}
+.valgt div:nth-child(2) {
+  transform: rotate(45deg);
+}
+.valgt div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+.valgt div:nth-child(4) {
+  opacity: 0;
+  bottom: 1rem;
+}
 
 .menu {
-    display: grid;
-    grid-template-columns: 1fr;
-    position: absolute;
-    top: 4rem;
-    left: -300%;
-    width: 400px;
-    height: calc(100vh - 4rem);
-    background-color: #666;
-    transition: 0.2s;
-    align-items: stretch;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: absolute;
+  top: 4rem;
+  left: -300%;
+  width: 400px;
+  height: calc(100vh - 4rem);
+  background-color: #666;
+  transition: 0.2s;
+  align-items: stretch;
 }
-
 
 .menu a:nth-child(odd) {
-    background-color: rgb(82, 82, 82);
+  background-color: rgb(82, 82, 82);
 }
-
-
 
 .menu a {
-    font-size: 2rem;
-    text-align: center;
-    color: #eeeeee;
-    text-decoration: none;
-    font-family: Helvetica, sans-serif;
-    font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  color: #eeeeee;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
 
 .menu.active {
-    left: 0;
-    transition: 0.2s;
+  left: 0;
+  transition: 0.2s;
 }
 
-
-
 #klokka {
-    color: #eeeeee;
-    font-family: Helvetica, sans-serif;
-    font-size: 15vw;
-    letter-spacing: 1vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  color: #eeeeee;
+  font-family: Helvetica, sans-serif;
+  font-size: 15vw;
+  letter-spacing: 1vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

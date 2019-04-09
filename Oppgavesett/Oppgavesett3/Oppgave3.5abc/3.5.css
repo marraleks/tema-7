@@ -1,0 +1,8 @@
+#firkant {
+  background-color: green;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 50vw;
+  transition: 1s;
+}

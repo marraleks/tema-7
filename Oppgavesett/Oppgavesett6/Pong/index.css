@@ -1,28 +1,30 @@
 canvas {
-    border: 2px solid black;
-    display: grid;
+  border: 2px solid black;
+  display: grid;
 }
 
 body {
-    height: 100vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1.5rem;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  background-image: url(https://static.vecteezy.com/system/resources/thumbnails/000/133/727/original/WoodBackground54342.jpg);
+  background-size: cover;
 }
 
 #txtScore1 {
-    position: absolute;
-    left: 500px;
-    top: 40px;
+  color: black;
+  position: absolute;
+  left: 500px;
+  top: 40px;
 }
 
 #txtScore2 {
-    position: absolute;
-    right: 500px;
-    top: 40px;
-    
+  color: black;
+  position: absolute;
+  right: 500px;
+  top: 40px;
 }
-
