@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Svg-animasjon</title>
+    <style>
+        svg {
+            background-color: lightblue;
+        }
+        
+        #linja {
+            animation: tegning 8s both;
+        }
+
+        @keyframes tegning {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        #animasjon {
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+        #mari {
+            font-size: 32px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(90deg);
+            offset-distance: 0%;
+            offset-path: path("M193.485,161.2S-17.594,126.453,111.944,104.9s208.125-92.594,165.414,30.262S604.851,272.257,411.192,345.491,24.386,428.078,111.944,333.674,67.053,182.191,54.31,217.14,193.485,161.2,193.485,161.2Z");
+            animation: walk 8s both
+        }
+
+        @keyframes walk {
+            to {
+                offset-distance: 100%;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+   
+
+<div id="animasjon">
+    <svg width="500" height="500">
+            <path id="linja" d="M193.485,161.2S-17.594,126.453,111.944,104.9s208.125-92.594,165.414,30.262S604.851,272.257,411.192,345.491,24.386,428.078,111.944,333.674,67.053,182.191,54.31,217.14,193.485,161.2,193.485,161.2Z" fill="none" stroke="#707070" stroke-width="2"/>
+    </svg>
+    <div id="mari">🐞</div>
+
+</div>
+
+    <script>
+    
+        const linja = document.querySelector("#linja");
+
+        const lengde = linja.getTotalLength();
+
+        linja.style.strokeDasharray = lengde;
+        linja.style.strokeDashoffset = lengde;
+        console.log(lengde);
+        
+        
+    </script>
+
+    
+
+</body>
+</html>

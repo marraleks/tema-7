@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(58, 58, 58);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#bildestriper {
+    border: 1px solid white;
+    width: 600px;
+    height: 300px;
+    display: grid;
+
+    perspective: 600px;
+}
+
+#bildestriper div {
+    background-image: url(./bilder/Hand1.jpg);
+    animation: fallNed 6s both;
+}
+
+#brud {
+    display: none;
+}
+
+@keyframes fallNed {
+    from {
+        transform: rotateX(-360deg) rotateY(60deg) translateY(-1000px);
+    }
+}
+
